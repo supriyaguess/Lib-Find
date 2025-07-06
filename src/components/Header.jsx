@@ -6,12 +6,17 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRightToBracket } from "@fortawesome/free-solid-svg-icons";
-
+import { useNavigate } from "react-router-dom";
 
 function Header() {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate("/"); // Navigates to home
+  };
   return (
     <div className="header">
-      <h1 className="site-title">
+      <h1 className="site-title" onClick={handleLogoClick}>
         <FontAwesomeIcon icon={faBookOpen} className="icon" />
         StudyFind
       </h1>

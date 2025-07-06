@@ -18,6 +18,10 @@
   gap: 1rem;
 }
 
+.site-title {
+  cursor: pointer;
+}
+
 /* === Icon Styles === */
 .search-icon-top,
 .filter-icon-top,

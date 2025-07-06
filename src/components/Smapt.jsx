@@ -13,15 +13,14 @@ function Smapt() {
         Join thousands of focused learners today!
       </p>
       <div className="smapt-footer">
-
-        <p className='left'>5 StudyFind. All rights reserved.</p>
-      
-      <div className="footer">
-        <a href="#about">About</a>
-        <a href="#terms">Terms & Services</a>
-        <a href="#privacy">Privacy Policy</a>
+        <div className="footer">
+          <a href="#about">About</a>
+          <a href="#terms">Terms & Services</a>
+          <a href="#privacy">Privacy Policy</a>
         </div>
+        <p className='left'>© 2025 StudyFind. All rights reserved.</p>
       </div>
+
     </div>
   );
 }

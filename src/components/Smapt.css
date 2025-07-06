@@ -1,42 +1,63 @@
 .smapt-container {
-    height: auto;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    flex-direction: column;
-    margin: 0 auto;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
 }
-.smapt-content {
-    display: flex;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    margin-bottom: 0rem;
-    margin-top: 1rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    font-size: 1.1rem;
-    font-weight: 200;
-    margin-bottom: 0.5rem;
-    color: rgb(80, 77, 77);
 
-}
 .star-icon {
-    font-size: 2rem;
-    
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
-.smapt-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-    color: rgb(80, 77, 77);
-    background-color: rgb(183, 186, 188);
-    width: 100%;
+
+.smapt-container h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.smapt-content {
+  max-width: 800px;
+  margin: 1rem auto 2rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #555;
+}
+
+.smapt-footer {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  background-color: #e5e7eb;
+  padding-bottom: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.smapt-footer .left {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
 }

@@ -2,7 +2,16 @@ import "./Home.css"; // Importing the CSS file for styling
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { useNavigate } from 'react-router-dom';
+
 function Home() {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/exploreLibraries');
+  };
+
   return (
     <div className="home">
       <section className="hero-section">
@@ -24,7 +33,7 @@ function Home() {
           <div className="icon" />
           <button>Search</button>
         </div>
-        <button className="explore-btn">
+        <button className="explore-btn" onClick={handleClick}>
           Explore Libraries
           <div />
         </button>
