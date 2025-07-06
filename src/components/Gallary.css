@@ -1,0 +1,71 @@
+/* StudyFind.css */
+
+.gallery {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+
+
+.main-card {
+border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  height: 300px;
+  position: relative;
+  margin: 10px 20px 5px 20px;
+}
+
+.placeholder-text {
+  font-size: 50px;
+  color: #666;
+  font-weight: bold;
+}
+
+.left-arrow, .right-arrow {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #666;
+    color: white;
+    border-radius: 50%;
+}
+
+.left-arrow {
+  left: 10px;
+  
+}
+
+.right-arrow {
+  right: 10px;
+ 
+    
+}
+
+.bottom-buttons {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+    justify-content: center;
+        flex-direction: row;
+        width: 100%;
+  position: relative;
+    bottom: 20px;
+    background-color: white;
+    height: 50px;
+    color: #eee;
+}
+
+.bottom-buttons Button:hover {
+  opacity: 0.8;
+  color: #60afa4;
+}

@@ -1,0 +1,129 @@
+/* StudyFind.css */
+
+.Focus-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+
+
+.main-card {
+border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  height: 300px;
+  position: relative;
+  margin: 20px 20px 20px 20px;
+}
+
+.placeholder-text {
+  font-size: 50px;
+  color: #666;
+  font-weight: bold;
+}
+
+.left-arrow, .right-arrow {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #666;
+    color: white;
+    border-radius: 50%;
+}
+
+.left-arrow {
+  left: 10px;
+  
+}
+
+.right-arrow {
+  right: 10px;
+ 
+    
+}
+
+.bottom-buttons {
+  display: flex;
+  gap: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+    bottom: 20px;
+    background-color: white;
+    height: 50px;
+}
+
+.call-now {
+  background: orange;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  width: 350px;
+  margin-left: 20px;
+  border-radius: 5px;
+  height: 40px;
+  margin-top: 10px;
+
+}
+
+.send-inquiry {
+  background: white;
+  border: 2px solid #00a88e;
+  padding: 10px;
+  cursor: pointer;
+  width: 350px;
+  color: #00a88e;
+    height: 40px;
+  border-radius: 5px;
+    margin-top: 10px;
+
+
+}
+.Button:hover {
+  opacity: 0.8;
+  background-color: #82c6bc;
+  border:2px solid #00a88e;
+  font-size: 16px;
+  font-weight: 100;
+  
+}
+.bottom-buttons1 {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+    justify-content: center;
+        flex-direction: row;
+        width: 100%;
+  position: relative;
+    bottom: 20px;
+    background-color: white;
+    height: 50px;
+    color: #eee;
+}
+.Button {
+  background-color: #eee;
+  color: #666;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 350px;
+  height: 50px;
+  margin: 30px 1px 10px 1px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}

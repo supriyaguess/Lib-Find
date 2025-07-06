@@ -1,0 +1,111 @@
+.endpart-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 300px;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1rem;
+}
+
+.endpart-image-section {
+  position: relative;
+  background-color: #f1f1f1;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.endpart-image-placeholder h2 {
+  color: #bdbdbd;
+  font-size: 1.2rem;
+}
+
+.endpart-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #00bfa5;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.endpart-info {
+  padding: 1rem;
+}
+
+.endpart-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.endpart-location {
+  font-size: 0.9rem;
+  color: gray;
+  margin: 0.2rem 0;
+}
+
+.endpart-rating {
+  margin: 0.3rem 0;
+}
+
+.stars {
+  color: #ffa500;
+  font-weight: bold;
+}
+
+.reviews {
+  font-size: 0.85rem;
+  color: gray;
+}
+
+.endpart-description {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.amenities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.amenity-item {
+  font-size: 0.75rem;
+  background: #eee;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+
+.endpart-price {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.price-type {
+  color: gray;
+  font-size: 0.85rem;
+}
+
+.view-button {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #00bfa5;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.view-button:hover {
+  background-color: #009e87;
+}

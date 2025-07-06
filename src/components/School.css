@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.school {
+  padding: 2rem 1rem;
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.libraries-section .highlight {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #000000;
+  font-weight: 600;
+}
+
+/* Use grid layout for better responsiveness */
+.libraries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.library-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(218, 218, 218, 0.977);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.library-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.icon-wrapper {
+  background-color: #eff8f6;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #00a88e;
+}
+
+.library-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #000000;
+}
+
+.library-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .libraries-section .highlight {
+    font-size: 2rem;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+
+  .library-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .library-card {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .libraries-section .highlight {
+    font-size: 1.75rem;
+  }
+
+  .icon-wrapper {
+    height: 60px;
+    width: 60px;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .library-card h2 {
+    font-size: 1rem;
+  }
+
+  .library-card p {
+    font-size: 0.9rem;
+  }
+}
