@@ -228,7 +228,7 @@ const navigate = useNavigate();
   return (
     <div className="app-container">
       {/* Header */}
-      <Header></Header>
+      {/* <Header></Header> */}
 
       {/* Main Content */}
       <main className="main-content">

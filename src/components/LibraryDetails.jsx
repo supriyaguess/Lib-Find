@@ -14,6 +14,7 @@ const LibraryDetails = () => {
     'Gallery 3',
     'Gallery 4'
   ];
+  
 
   const seatingOptions = [
     {
@@ -94,33 +95,6 @@ const LibraryDetails = () => {
 
   return (
     <div className="app-container">
-      <Header></Header>
-      {/* <header className="header">
-        <div className="header-content">
-          <div className="header-inner">
-            <div className="logo-section">
-              <div className="logo">
-                <span className="logo-text">SF</span>
-              </div>
-              <span className="brand-name">StudyFind</span>
-            </div>
-            <div className="nav-section">
-              <div className="search-section">
-                <input
-                  type="text"
-                  placeholder="Search by City, Area, or Pincode..."
-                  className="search-input"
-                />
-                <button className="search-button">
-                  Search
-                </button>
-              </div>
-              <button className="nav-button">List Your Space</button>
-              <button className="nav-button">Login</button>
-            </div>
-          </div>
-        </div>
-      </header> */}
 
       {/* Main Content */}
       <main className="main-content">
