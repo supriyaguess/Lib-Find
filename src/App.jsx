@@ -34,6 +34,7 @@ function App() {
         />
         <Route path="/profile" element={
           <div>
+            <Header user={user} onLogout={handleLogout} />
             <Profile user={user} onUpdateUser={updateUser} />
           </div>
         } />
