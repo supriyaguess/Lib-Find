@@ -39,12 +39,22 @@ function App() {
           </div>
         } />
         <Route
-          path="/libraries"
+          path="/libraries/:id"
           element={
+            <div>
+              <Header user={user} onLogout={handleLogout} />
+              <LibraryDetails />
+            </div>
+          }
+        />
+        <Route
+          path="/libraries"
+          element= {
           <div>
             <Header user={user} onLogout={handleLogout} />
-            <LibraryDetails />
+            <ExploreLibraries />
           </div>}
+          
         />
         <Route
           path="/exploreLibraries"

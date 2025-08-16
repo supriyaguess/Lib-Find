@@ -1,0 +1,302 @@
+{
+  "libraries": [
+    {
+      "id": 1,
+      "name": "Scholar's Den Uptown",
+      "location": "Uptown Area, Learnville",
+      "fullAddress": "123 Scholar's Street, Uptown Area, Learnville - 560001",
+      "rating": 4.8,
+      "reviews": 250,
+      "description": "Scholar's Den Uptown is a 24/7 study library designed for serious learners. We provide a peaceful and focused environment with modern amenities to help you achieve your academic goals.",
+      "price": 6000,
+      "priceType": "monthly",
+      "hours": "24/7 Access",
+      "tags": ["24/7 Access", "Study Space", "Premium"],
+      "phone": "9876543210",
+      "email": "contact@scholarsden.com",
+      "website": "www.scholarsden.com",
+      "amenities": ["Wi-Fi", "AC", "Locker", "Power Socket", "Restroom"],
+      "images": [
+        "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80",
+        "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&q=80",
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+        "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80",
+        "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&q=80"
+      ],
+      "seatingOptions": [
+        {
+          "id": "private-cabin",
+          "name": "Private Cabin",
+          "description": "Fully enclosed private cabin with premium desk space and storage.",
+          "availability": "3 seats available",
+          "price": "₹800/day",
+          "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=400&q=80"
+        },
+        {
+          "id": "semi-private",
+          "name": "Semi-Private",
+          "description": "Semi-private workspace with partition walls.",
+          "availability": "8 seats available",
+          "price": "₹600/day",
+          "image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&q=80"
+        },
+        {
+          "id": "shared-desk",
+          "name": "Shared Desk",
+          "description": "Shared workspace in quiet study hall.",
+          "availability": "15 seats available",
+          "price": "₹400/day",
+          "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=80"
+        }
+      ],
+      "amenitiesDetailed": [
+        { "name": "High-Speed Wi-Fi", "type": "wifi" },
+        { "name": "AC & Power Socket", "type": "power" },
+        { "name": "Locker & Security", "type": "security" },
+        { "name": "Restroom", "type": "restroom" },
+        { "name": "Library Resources", "type": "resources" }
+      ],
+      "rules": [
+        "Maintain complete silence in study areas",
+        "No outside food in premium cabins",
+        "Clean and sanitize your workspace after use",
+        "No phone calls in silent zones"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "FocusHub Central",
+      "location": "Central District, Tech City",
+      "fullAddress": "123 Knowledge Park, Silicon Alley, Central District, Tech City - 560001",
+      "rating": 4.5,
+      "reviews": 120,
+      "description": "FocusHub Central offers a premium study environment with various seating options and top-notch amenities to boost your productivity. Located in the heart of Tech City.",
+      "price": 5000,
+      "priceType": "monthly",
+      "hours": "08:00 AM - 10:00 PM",
+      "tags": ["Study Space", "Coworking", "Modern"],
+      "phone": "9876543210",
+      "email": "contact@focushub.com",
+      "website": "www.focushub.com",
+      "amenities": ["Wi-Fi", "AC", "Locker", "Power Socket", "Food & Beverages"],
+      "images": [
+        "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&q=80",
+        "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80",
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+        "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&q=80",
+        "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80"
+      ],
+      "seatingOptions": [
+        {
+          "id": "cabin",
+          "name": "Cabin",
+          "description": "Private, enclosed cabin with ample desk space.",
+          "availability": "5 seats available",
+          "price": "₹700/day",
+          "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=400&q=80"
+        },
+        {
+          "id": "cubicle",
+          "name": "Cubicle",
+          "description": "Semi-private cubicle for focused work.",
+          "availability": "10 seats available",
+          "price": "₹500/day",
+          "image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&q=80"
+        },
+        {
+          "id": "open-desk",
+          "name": "Open Desk",
+          "description": "Shared open desk in a quiet environment.",
+          "availability": "20 seats available",
+          "price": "₹300/day",
+          "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=80"
+        }
+      ],
+      "amenitiesDetailed": [
+        { "name": "Wi-Fi", "type": "wifi" },
+        { "name": "AC", "type": "power" },
+        { "name": "Power Socket", "type": "power" },
+        { "name": "Restroom", "type": "restroom" },
+        { "name": "CCTV Security", "type": "security" }
+      ],
+      "rules": [
+        "Maintain silence",
+        "No outside food allowed in cabins",
+        "Clean your desk after use"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "The Study Nook",
+      "location": "Green Meadows, Quiet Town",
+      "fullAddress": "456 Study Lane, Green Meadows, Quiet Town - 560002",
+      "rating": 4.2,
+      "reviews": 80,
+      "description": "The Study Nook offers a casual and comfortable environment for short study bursts or remote work sessions. Perfect for students looking for an affordable study space.",
+      "price": 100,
+      "priceType": "hourly",
+      "hours": "09:00 AM - 09:00 PM",
+      "tags": ["Affordable", "Casual", "Flexible"],
+      "phone": "9876543211",
+      "email": "hello@studynook.com",
+      "website": "www.studynook.com",
+      "amenities": ["Wi-Fi", "Locker", "Reading Lamp", "Power Socket"],
+      "images": [
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+        "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80",
+        "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&q=80",
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+        "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80"
+      ],
+      "seatingOptions": [
+        {
+          "id": "cozy-corner",
+          "name": "Cozy Corner",
+          "description": "Comfortable corner seat with good lighting.",
+          "availability": "12 seats available",
+          "price": "₹150/day",
+          "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=400&q=80"
+        },
+        {
+          "id": "study-table",
+          "name": "Study Table",
+          "description": "Standard study table in open area.",
+          "availability": "25 seats available",
+          "price": "₹100/day",
+          "image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&q=80"
+        }
+      ],
+      "amenitiesDetailed": [
+        { "name": "Wi-Fi", "type": "wifi" },
+        { "name": "Locker", "type": "security" },
+        { "name": "Reading Lamp", "type": "lighting" },
+        { "name": "Power Socket", "type": "power" }
+      ],
+      "rules": [
+        "Keep noise to minimum",
+        "Return books to designated areas",
+        "No food or drinks near electronics"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Knowledge Hub Express",
+      "location": "Business District, Metro City",
+      "fullAddress": "789 Business Avenue, Business District, Metro City - 560003",
+      "rating": 4.6,
+      "reviews": 180,
+      "description": "Knowledge Hub Express is strategically located in the business district, offering flexible study spaces for professionals and students alike. High-speed internet and modern facilities.",
+      "price": 4500,
+      "priceType": "monthly",
+      "hours": "06:00 AM - 11:00 PM",
+      "tags": ["Business District", "Professional", "Extended Hours"],
+      "phone": "9876543212",
+      "email": "info@knowledgehub.com",
+      "website": "www.knowledgehub.com",
+      "amenities": ["Wi-Fi", "AC", "Printer", "Power Socket", "Food & Beverages", "Parking"],
+      "images": [
+        "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80",
+        "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&q=80",
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+        "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80",
+        "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&q=80"
+      ],
+      "seatingOptions": [
+        {
+          "id": "executive-cabin",
+          "name": "Executive Cabin",
+          "description": "Premium executive cabin with ergonomic furniture and privacy.",
+          "availability": "4 seats available",
+          "price": "₹900/day",
+          "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=400&q=80"
+        },
+        {
+          "id": "hot-desk",
+          "name": "Hot Desk",
+          "description": "Flexible hot desk for quick sessions.",
+          "availability": "18 seats available",
+          "price": "₹350/day",
+          "image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&q=80"
+        }
+      ],
+      "amenitiesDetailed": [
+        { "name": "High-Speed Wi-Fi", "type": "wifi" },
+        { "name": "AC & Climate Control", "type": "power" },
+        { "name": "Printer & Scanner", "type": "office" },
+        { "name": "Power Socket", "type": "power" },
+        { "name": "Food & Beverages", "type": "food" },
+        { "name": "Parking", "type": "parking" }
+      ],
+      "rules": [
+        "Professional attire recommended",
+        "No loud phone conversations",
+        "Clean workspace policy mandatory",
+        "Respect others' working space"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Quiet Corner Library",
+      "location": "University Area, Study Town",
+      "fullAddress": "321 University Road, Study Town - 560004",
+      "rating": 4.3,
+      "reviews": 95,
+      "description": "Quiet Corner Library is perfect for university students and researchers. Located near the university campus with specialized study zones and research facilities.",
+      "price": 3500,
+      "priceType": "monthly",
+      "hours": "07:00 AM - 12:00 AM",
+      "tags": ["University Area", "Research Friendly", "Student Discount"],
+      "phone": "9876543213",
+      "email": "contact@quietcorner.com",
+      "website": "www.quietcorner.com",
+      "amenities": ["Wi-Fi", "AC", "Locker", "Reading Lamp", "Power Socket", "Restroom"],
+      "images": [
+        "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&q=80",
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+        "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80",
+        "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&q=80",
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80"
+      ],
+      "seatingOptions": [
+        {
+          "id": "research-booth",
+          "name": "Research Booth",
+          "description": "Dedicated research booth with extra desk space for books and materials.",
+          "availability": "6 seats available",
+          "price": "₹650/day",
+          "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=400&q=80"
+        },
+        {
+          "id": "group-study",
+          "name": "Group Study Area",
+          "description": "Collaborative space for group discussions and study sessions.",
+          "availability": "8 seats available",
+          "price": "₹450/day",
+          "image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&q=80"
+        },
+        {
+          "id": "silent-zone",
+          "name": "Silent Zone",
+          "description": "Completely silent zone for individual focused study.",
+          "availability": "22 seats available",
+          "price": "₹300/day",
+          "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=80"
+        }
+      ],
+      "amenitiesDetailed": [
+        { "name": "High-Speed Wi-Fi", "type": "wifi" },
+        { "name": "AC", "type": "power" },
+        { "name": "Personal Locker", "type": "security" },
+        { "name": "Reading Lamp", "type": "lighting" },
+        { "name": "Power Socket", "type": "power" },
+        { "name": "Clean Restroom", "type": "restroom" }
+      ],
+      "rules": [
+        "Absolute silence in silent zones",
+        "Student ID required for discounts",
+        "Group discussions only in designated areas",
+        "No food in study areas"
+      ]
+    }
+  ]
+}

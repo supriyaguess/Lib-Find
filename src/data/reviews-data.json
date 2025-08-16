@@ -1,0 +1,28 @@
+{
+  "reviews": {
+    "1": [
+      { "id": 1, "name": "Aisha K.", "initials": "AK", "rating": 5, "comment": "Excellent place for focused study! Clean and quiet environment with all necessary amenities.", "date": "10/15/2023" },
+      { "id": 2, "name": "Rohan S.", "initials": "RS", "rating": 4, "comment": "Good amenities and 24/7 access is really helpful. Wi-Fi could be faster though.", "date": "10/12/2023" },
+      { "id": 3, "name": "Priya M.", "initials": "PM", "rating": 5, "comment": "Perfect for exam preparation. The private cabins are worth the extra cost!", "date": "10/08/2023" }
+    ],
+    "2": [
+      { "id": 1, "name": "Vikram T.", "initials": "VT", "rating": 4, "comment": "Great location in tech city. Modern facilities and good atmosphere for work.", "date": "10/14/2023" },
+      { "id": 2, "name": "Sneha L.", "initials": "SL", "rating": 5, "comment": "Love the food and beverage options. Very convenient for long study sessions.", "date": "10/10/2023" },
+      { "id": 3, "name": "Arjun P.", "initials": "AP", "rating": 4, "comment": "Good value for money. The cubicles provide nice privacy.", "date": "10/05/2023" }
+    ],
+    "3": [
+      { "id": 1, "name": "Kavya R.", "initials": "KR", "rating": 4, "comment": "Affordable option with decent facilities. Good for casual study sessions.", "date": "10/13/2023" },
+      { "id": 2, "name": "Rahul K.", "initials": "RK", "rating": 4, "comment": "Nice cozy environment. Perfect for quick study sessions between classes.", "date": "10/09/2023" }
+    ],
+    "4": [
+      { "id": 1, "name": "Deepika S.", "initials": "DS", "rating": 5, "comment": "Professional environment perfect for business presentations and client calls.", "date": "10/16/2023" },
+      { "id": 2, "name": "Manish A.", "initials": "MA", "rating": 4, "comment": "Executive cabins are excellent. Great for focused work in business district.", "date": "10/11/2023" },
+      { "id": 3, "name": "Ritu G.", "initials": "RG", "rating": 5, "comment": "Extended hours are very helpful. Parking facility is a big plus!", "date": "10/07/2023" }
+    ],
+    "5": [
+      { "id": 1, "name": "Ankit V.", "initials": "AV", "rating": 4, "comment": "Great for university students. Research booths are spacious and well-lit.", "date": "10/15/2023" },
+      { "id": 2, "name": "Shreya N.", "initials": "SN", "rating": 4, "comment": "Good location near campus. Group study areas are well designed.", "date": "10/12/2023" },
+      { "id": 3, "name": "Karan J.", "initials": "KJ", "rating": 5, "comment": "Silent zones are perfectly maintained. Excellent for research work.", "date": "10/06/2023" }
+    ]
+  }
+}

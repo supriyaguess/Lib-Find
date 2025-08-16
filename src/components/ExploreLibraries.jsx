@@ -4,7 +4,6 @@ import './ExploreLibraries.css';
 import { useNavigate } from "react-router-dom";
 import Header from './Header'
 
-
 const ExploreLibraries = () => {
   const [viewMode, setViewMode] = useState('grid');
   const [sortBy, setSortBy] = useState('Sort by Rating');
@@ -13,10 +12,11 @@ const ExploreLibraries = () => {
   const [feeRange, setFeeRange] = useState([0, 10000]);
   const [selectedAmenities, setSelectedAmenities] = useState([]);
 
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/libraries"); // Navigates to home
+  // Updated handleClick to accept library ID
+  const handleClick = (libraryId) => {
+    navigate(`/libraries/${libraryId}`); // Navigate to specific library page
   };
 
   const libraries = [
@@ -26,12 +26,14 @@ const navigate = useNavigate();
       location: "Uptown Area, Learnville",
       rating: 4.8,
       reviews: 250,
-      description: "Scholar's Den Uptown is a 24/7 study library designed for serious learners. We provide a peaceful and focused environment with modern amenities.",
+      description:
+        "Scholar's Den Uptown is a 24/7 study library designed for serious learners. We provide a peaceful and focused environment with modern amenities.",
       price: 6000,
       priceType: "monthly",
       tags: ["24/7 Access"],
       amenities: ["Wi-Fi", "AC", "Locker", "Power Socket", "Restroom"],
-      image: "scholar-den"
+      image:
+        "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80"
     },
     {
       id: 2,
@@ -39,12 +41,14 @@ const navigate = useNavigate();
       location: "Central District, Tech City",
       rating: 4.5,
       reviews: 120,
-      description: "FocusHub Central offers a premium study environment with various seating options and modern facilities for productive learning.",
+      description:
+        "FocusHub Central offers a premium study environment with various seating options and modern facilities for productive learning.",
       price: 5000,
       priceType: "monthly",
       tags: ["Quiet Zone"],
       amenities: ["Wi-Fi", "AC", "Locker", "Power Socket", "Food & Beverages"],
-      image: "focushub"
+      image:
+        "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&q=80"
     },
     {
       id: 3,
@@ -52,14 +56,17 @@ const navigate = useNavigate();
       location: "Green Meadows, Quiet Town",
       rating: 4.2,
       reviews: 80,
-      description: "The Study Nook offers a casual and comfortable environment for short study bursts or remote work sessions.",
+      description:
+        "The Study Nook offers a casual and comfortable environment for short study bursts or remote work sessions.",
       price: 100,
       priceType: "hourly",
       tags: ["Affordable"],
       amenities: ["Wi-Fi", "Locker", "Reading Lamp", "Power Socket"],
-      image: "study-nook"
+      image:
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80"
     }
   ];
+
 
   const sortOptions = [
     "Sort by Rating",
@@ -159,7 +166,10 @@ const navigate = useNavigate();
               {formatPrice(library.price, library.priceType)}
             </div>
           </div>
-          <button className="view-details-btn" onClick={handleClick}>
+          <button 
+            className="view-details-btn" 
+            onClick={() => handleClick(library.id)}
+          >
             View Details
           </button>
         </div>
@@ -215,7 +225,10 @@ const navigate = useNavigate();
                   {formatPrice(library.price, library.priceType)}
                 </div>
               </div>
-              <button className="view-details-btn" onClick={handleClick}>
+              <button 
+                className="view-details-btn" 
+                onClick={() => handleClick(library.id)}
+              >
                 View Details
               </button>
             </div>
