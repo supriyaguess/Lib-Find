@@ -1,0 +1,892 @@
+{
+  "1": {
+    "id": 1,
+    "name": "Scholar's Den Uptown",
+    "location": "Uptown Area, Learnville",
+    "fullAddress": "123 Scholar's Street, Uptown Area, Learnville - 560001",
+    "rating": 4.8,
+    "reviews": 250,
+    "description": "Scholar's Den Uptown is a 24/7 study library designed for serious learners. We provide a peaceful and focused environment with modern amenities to help you achieve your academic goals.",
+    "hours": "24/7 Access",
+    "tags": ["24/7 Access", "Study Space", "Premium"],
+    "phone": "9876543210",
+    "email": "contact@scholarsden.com",
+    "website": "www.scholarsden.com",
+    "images": [
+      "/library/main.jpg",
+      "/library/gallery-1.jpg",
+      "/library/gallery-2.jpg",
+      "/library/gallery-3.jpg",
+      "/library/gallery-4.jpg"
+    ],
+    "seatingOptions": [
+      {
+        "id": "private-cabin-1",
+        "name": "Private Cabin",
+        "description": "Fully enclosed private cabin with premium desk space and storage.",
+        "availability": "3 seats available",
+        "price": "₹800/day",
+        "image": "/seating/cabin.jpg"
+      },
+      {
+        "id": "semi-private-1",
+        "name": "Semi-Private",
+        "description": "Semi-private workspace with partition walls.",
+        "availability": "8 seats available",
+        "price": "₹600/day",
+        "image": "/seating/cubicle.jpg"
+      },
+      {
+        "id": "shared-desk-1",
+        "name": "Shared Desk",
+        "description": "Shared workspace in quiet study hall.",
+        "availability": "15 seats available",
+        "price": "₹400/day",
+        "image": "/seating/open-desk.jpg"
+      }
+    ],
+    "amenities": [
+      { "icon": "Wifi", "name": "High-Speed Wi-Fi" },
+      { "icon": "Zap", "name": "AC & Power Socket" },
+      { "icon": "Shield", "name": "Locker & Security" },
+      { "icon": "Users", "name": "Restroom" },
+      { "icon": "Globe", "name": "Library Resources" }
+    ],
+    "rules": [
+      "Maintain complete silence in study areas",
+      "No outside food in premium cabins",
+      "Clean and sanitize your workspace after use",
+      "No phone calls in silent zones"
+    ]
+  },
+  "2": {
+    "id": 2,
+    "name": "The Reading Room Central",
+    "location": "Central Square, Learnville",
+    "fullAddress": "45 Knowledge Avenue, Central Square, Learnville - 560002",
+    "rating": 4.6,
+    "reviews": 310,
+    "description": "The Reading Room Central offers a spacious study environment with flexible seating options and modern facilities for both group and solo learners.",
+    "hours": "6 AM - 11 PM",
+    "tags": ["Spacious", "Affordable", "Group Friendly"],
+    "phone": "9876504321",
+    "email": "info@readingroomcentral.com",
+    "website": "www.readingroomcentral.com",
+    "images": [
+      "/library/main.jpg",
+      "/library/gallery-1.jpg",
+      "/library/gallery-2.jpg",
+      "/library/gallery-3.jpg",
+      "/library/gallery-4.jpg"
+    ],
+    "seatingOptions": [
+      {
+        "id": "private-cabin-2",
+        "name": "Private Cabin",
+        "description": "Compact private cabin with modern furniture.",
+        "availability": "4 cabins available",
+        "price": "₹750/day",
+        "image": "/seating/cabin.jpg"
+      },
+      {
+        "id": "semi-private-2",
+        "name": "Semi-Private",
+        "description": "Partitioned semi-private seating.",
+        "availability": "12 seats available",
+        "price": "₹550/day",
+        "image": "/seating/cubicle.jpg"
+      },
+      {
+        "id": "shared-desk-2",
+        "name": "Shared Desk",
+        "description": "Community desk seating for collaborative study.",
+        "availability": "20 seats available",
+        "price": "₹350/day",
+        "image": "/seating/open-desk.jpg"
+      }
+    ],
+    "amenities": [
+      { "icon": "Wifi", "name": "Free Wi-Fi" },
+      { "icon": "Zap", "name": "Air Conditioning" },
+      { "icon": "Shield", "name": "CCTV Security" },
+      { "icon": "Users", "name": "Washrooms" },
+      { "icon": "Globe", "name": "Digital Resources" }
+    ],
+    "rules": [
+      "Food allowed only in designated areas",
+      "Maintain decorum during group discussions",
+      "Do not move furniture without permission"
+    ]
+  },
+  "3": {
+    "id": 3,
+    "name": "Knowledge Hub East",
+    "location": "East End, Learnville",
+    "fullAddress": "12 Insight Lane, East End, Learnville - 560003",
+    "rating": 4.7,
+    "reviews": 190,
+    "description": "Knowledge Hub East provides a modern, well-equipped space for learners with both quiet and collaborative zones.",
+    "hours": "8 AM - 10 PM",
+    "tags": ["Modern", "Quiet", "Collaborative"],
+    "phone": "9876512340",
+    "email": "support@knowledgehubeast.com",
+    "website": "www.knowledgehubeast.com",
+    "images": [
+      "/library/main.jpg",
+      "/library/gallery-1.jpg",
+      "/library/gallery-2.jpg",
+      "/library/gallery-3.jpg",
+      "/library/gallery-4.jpg"
+    ],
+    "seatingOptions": [
+      {
+        "id": "private-cabin-3",
+        "name": "Private Cabin",
+        "description": "Quiet, enclosed cabin for uninterrupted focus.",
+        "availability": "5 cabins available",
+        "price": "₹700/day",
+        "image": "/seating/cabin.jpg"
+      },
+      {
+        "id": "semi-private-3",
+        "name": "Semi-Private",
+        "description": "Shared semi-private cubicles.",
+        "availability": "10 seats available",
+        "price": "₹500/day",
+        "image": "/seating/cubicle.jpg"
+      },
+      {
+        "id": "shared-desk-3",
+        "name": "Shared Desk",
+        "description": "Open desk seating with study lamps.",
+        "availability": "18 seats available",
+        "price": "₹300/day",
+        "image": "/seating/open-desk.jpg"
+      }
+    ],
+    "amenities": [
+      { "icon": "Wifi", "name": "High-Speed Internet" },
+      { "icon": "Zap", "name": "AC & Charging Ports" },
+      { "icon": "Shield", "name": "Lockers" },
+      { "icon": "Users", "name": "Restrooms" },
+      { "icon": "Globe", "name": "Access to E-Journals" }
+    ],
+    "rules": [
+      "Respect quiet zones",
+      "No group discussions in silent halls",
+      "Food and drinks only in cafeteria area"
+    ]
+  },
+  "4": {
+    "id": 4,
+    "name": "Elite Study Lounge",
+    "location": "West Park, Learnville",
+    "fullAddress": "67 Wisdom Street, West Park, Learnville - 560004",
+    "rating": 4.9,
+    "reviews": 420,
+    "description": "Elite Study Lounge is designed for premium comfort with luxury seating and a calm atmosphere for scholars and professionals.",
+    "hours": "7 AM - 12 Midnight",
+    "tags": ["Premium", "Luxury", "24/7 Access"],
+    "phone": "9876523451",
+    "email": "hello@elitestudylounge.com",
+    "website": "www.elitestudylounge.com",
+    "images": [
+      "/library/main.jpg",
+      "/library/gallery-1.jpg",
+      "/library/gallery-2.jpg",
+      "/library/gallery-3.jpg",
+      "/library/gallery-4.jpg"
+    ],
+    "seatingOptions": [
+      {
+        "id": "private-cabin-4",
+        "name": "Private Cabin",
+        "description": "Luxury cabins with ergonomic seating.",
+        "availability": "6 cabins available",
+        "price": "₹1000/day",
+        "image": "/seating/cabin.jpg"
+      },
+      {
+        "id": "semi-private-4",
+        "name": "Semi-Private",
+        "description": "Spacious semi-private sections.",
+        "availability": "15 seats available",
+        "price": "₹700/day",
+        "image": "/seating/cubicle.jpg"
+      },
+      {
+        "id": "shared-desk-4",
+        "name": "Shared Desk",
+        "description": "Well-lit open desk hall.",
+        "availability": "25 seats available",
+        "price": "₹500/day",
+        "image": "/seating/open-desk.jpg"
+      }
+    ],
+    "amenities": [
+      { "icon": "Wifi", "name": "Ultra-Fast Wi-Fi" },
+      { "icon": "Zap", "name": "AC & Personal Chargers" },
+      { "icon": "Shield", "name": "Secure Lockers" },
+      { "icon": "Users", "name": "Luxury Washrooms" },
+      { "icon": "Globe", "name": "Premium Resources" }
+    ],
+    "rules": [
+      "Formal dress code required in lounge area",
+      "Silence mandatory in premium zones",
+      "Outside food not allowed"
+    ]
+  },
+  "5": {
+    "id": 5,
+    "name": "Focus Point Library",
+    "location": "Southside, Learnville",
+    "fullAddress": "89 Concentration Road, Southside, Learnville - 560005",
+    "rating": 4.5,
+    "reviews": 150,
+    "description": "Focus Point Library is an affordable and quiet library dedicated to students preparing for competitive exams and research work.",
+    "hours": "6 AM - 10 PM",
+    "tags": ["Affordable", "Exam Prep", "Quiet"],
+    "phone": "9876534562",
+    "email": "focus@focuspointlibrary.com",
+    "website": "www.focuspointlibrary.com",
+    "images": [
+      "/library/main.jpg",
+      "/library/gallery-1.jpg",
+      "/library/gallery-2.jpg",
+      "/library/gallery-3.jpg",
+      "/library/gallery-4.jpg"
+    ],
+    "seatingOptions": [
+      {
+        "id": "private-cabin-5",
+        "name": "Private Cabin",
+        "description": "Dedicated private cabins for exam aspirants.",
+        "availability": "3 cabins available",
+        "price": "₹600/day",
+        "image": "/seating/cabin.jpg"
+      },
+      {
+        "id": "semi-private-5",
+        "name": "Semi-Private",
+        "description": "Cost-effective semi-private study cubicles.",
+        "availability": "10 seats available",
+        "price": "₹400/day",
+        "image": "/seating/cubicle.jpg"
+      },
+      {
+        "id": "shared-desk-5",
+        "name": "Shared Desk",
+        "description": "Open desk seating at lowest rates.",
+        "availability": "20 seats available",
+        "price": "₹250/day",
+        "image": "/seating/open-desk.jpg"
+      }
+    ],
+    "amenities": [
+      { "icon": "Wifi", "name": "Wi-Fi" },
+      { "icon": "Zap", "name": "Fans & Charging Points" },
+      { "icon": "Shield", "name": "Lockers" },
+      { "icon": "Users", "name": "Washrooms" },
+      { "icon": "Globe", "name": "Books & Journals" }
+    ],
+    "rules": [
+      "Mobile phones must be kept silent",
+      "Food strictly prohibited",
+      "Keep your workspace neat"
+    ]
+  },
+  "6":{
+    "id": 6,
+    "name": "Visionary Study Zone",
+    "location": "Innovation Park, Learnville",
+    "fullAddress": "56 Creative Lane, Innovation Park, Learnville - 560006",
+    "rating": 4.4,
+    "reviews": 145,
+    "description": "Visionary Study Zone is designed for ambitious learners and professionals. With modern study cabins and collaborative spaces, it provides an environment to focus and innovate.",
+    "hours": "6 AM - 11 PM",
+    "tags": ["Collaborative", "Modern", "Quiet"],
+    "phone": "9876500006",
+    "email": "info@visionarystudyzone.com",
+    "website": "www.visionarystudyzone.com",
+    "images": [
+      "/library/main.jpg",
+      "/library/gallery-1.jpg",
+      "/library/gallery-2.jpg",
+      "/library/gallery-3.jpg",
+      "/library/gallery-4.jpg"
+    ],
+    "seatingOptions": [
+      {
+        "id": "private-cabin-6",
+        "name": "Private Cabin",
+        "description": "Spacious private cabin for distraction-free study.",
+        "availability": "4 seats available",
+        "price": "₹750/day",
+        "image": "/seating/cabin.jpg"
+      },
+      {
+        "id": "semi-private-6",
+        "name": "Semi-Private",
+        "description": "Modern semi-private workspace with ergonomic seating.",
+        "availability": "9 seats available",
+        "price": "₹550/day",
+        "image": "/seating/cubicle.jpg"
+      },
+      {
+        "id": "shared-desk-6",
+        "name": "Shared Desk",
+        "description": "Collaborative desks with access to whiteboards.",
+        "availability": "18 seats available",
+        "price": "₹350/day",
+        "image": "/seating/open-desk.jpg"
+      }
+    ],
+    "amenities": [
+      { "icon": "Wifi", "name": "High-Speed Wi-Fi" },
+      { "icon": "Zap", "name": "AC & Power Socket" },
+      { "icon": "Shield", "name": "Locker & Security" },
+      { "icon": "Users", "name": "Restroom" },
+      { "icon": "Globe", "name": "Library Resources" }
+    ],
+    "rules": [
+      "Respect the collaborative environment",
+      "No loud discussions in shared zones",
+      "Keep whiteboards clean after use",
+      "Food only allowed in cafeteria area"
+    ]
+  },
+  "7": {
+    "id": 7,
+    "name": "Focus Lounge Library",
+    "location": "East End, Learnville",
+    "fullAddress": "77 Focus Lane, East End, Learnville - 560007",
+    "rating": 4.6,
+    "reviews": 180,
+    "description": "Focus Lounge Library offers a minimalist yet highly effective study environment. Designed to keep distractions away, it’s perfect for students preparing for competitive exams.",
+    "hours": "7 AM - 11 PM",
+    "tags": ["Minimalist", "Competitive Prep", "Silent"],
+    "phone": "9876500007",
+    "email": "contact@focuslounge.com",
+    "website": "www.focuslounge.com",
+    "images": [
+      "/library/main.jpg",
+      "/library/gallery-1.jpg",
+      "/library/gallery-2.jpg",
+      "/library/gallery-3.jpg",
+      "/library/gallery-4.jpg"
+    ],
+    "seatingOptions": [
+      {
+        "id": "private-cabin-7",
+        "name": "Private Cabin",
+        "description": "Isolated private cabins with absolute silence.",
+        "availability": "3 seats available",
+        "price": "₹850/day",
+        "image": "/seating/cabin.jpg"
+      },
+      {
+        "id": "semi-private-7",
+        "name": "Semi-Private",
+        "description": "Comfortable semi-private sections with partition walls.",
+        "availability": "7 seats available",
+        "price": "₹600/day",
+        "image": "/seating/cubicle.jpg"
+      },
+      {
+        "id": "shared-desk-7",
+        "name": "Shared Desk",
+        "description": "Open desks in pin-drop silence halls.",
+        "availability": "20 seats available",
+        "price": "₹400/day",
+        "image": "/seating/open-desk.jpg"
+      }
+    ],
+    "amenities": [
+      { "icon": "Wifi", "name": "High-Speed Wi-Fi" },
+      { "icon": "Zap", "name": "AC & Power Socket" },
+      { "icon": "Shield", "name": "Locker & Security" },
+      { "icon": "Users", "name": "Restroom" },
+      { "icon": "Globe", "name": "Library Resources" }
+    ],
+    "rules": [
+      "Maintain pin-drop silence",
+      "Phones must be kept on silent mode",
+      "Food and drinks are not allowed",
+      "Respect shared study hall guidelines"
+    ]
+  },
+  "8": {
+    "id": 8,
+    "name": "Aspire Knowledge Hub",
+    "location": "City Center, Learnville",
+    "fullAddress": "101 Aspire Plaza, City Center, Learnville - 560008",
+    "rating": 4.9,
+    "reviews": 270,
+    "description": "Aspire Knowledge Hub is a premium library designed for students and professionals with top-class infrastructure, premium seating, and world-class resources.",
+    "hours": "24/7 Access",
+    "tags": ["Premium", "24/7", "Professional"],
+    "phone": "9876500008",
+    "email": "hello@aspirehub.com",
+    "website": "www.aspirehub.com",
+    "images": [
+      "/library/main.jpg",
+      "/library/gallery-1.jpg",
+      "/library/gallery-2.jpg",
+      "/library/gallery-3.jpg",
+      "/library/gallery-4.jpg"
+    ],
+    "seatingOptions": [
+      {
+        "id": "private-cabin-8",
+        "name": "Private Cabin",
+        "description": "Luxury private cabins with ergonomic seating and dedicated storage.",
+        "availability": "2 seats available",
+        "price": "₹1000/day",
+        "image": "/seating/cabin.jpg"
+      },
+      {
+        "id": "semi-private-8",
+        "name": "Semi-Private",
+        "description": "Semi-private spaces with premium ambiance.",
+        "availability": "6 seats available",
+        "price": "₹750/day",
+        "image": "/seating/cubicle.jpg"
+      },
+      {
+        "id": "shared-desk-8",
+        "name": "Shared Desk",
+        "description": "Premium shared desks with noise cancellation setup.",
+        "availability": "12 seats available",
+        "price": "₹500/day",
+        "image": "/seating/open-desk.jpg"
+      }
+    ],
+    "amenities": [
+      { "icon": "Wifi", "name": "High-Speed Wi-Fi" },
+      { "icon": "Zap", "name": "AC & Power Socket" },
+      { "icon": "Shield", "name": "Locker & Security" },
+      { "icon": "Users", "name": "Restroom" },
+      { "icon": "Globe", "name": "Library Resources" }
+    ],
+    "rules": [
+      "Maintain formal decorum at all times",
+      "Food only allowed in designated cafeteria",
+      "Cabins must be pre-booked in advance",
+      "No calls or loud discussions"
+    ]
+  },
+  "9": {
+    "id": 9,
+    "name": "Knowledge Nest",
+    "location": "Greenfield, Learnville",
+    "fullAddress": "202 Nest Building, Greenfield, Learnville - 560009",
+    "rating": 4.3,
+    "reviews": 110,
+    "description": "Knowledge Nest is a cozy and budget-friendly library with a homely feel. Perfect for students looking for an affordable and distraction-free space to study.",
+    "hours": "8 AM - 9 PM",
+    "tags": ["Budget", "Cozy", "Student Friendly"],
+    "phone": "9876500009",
+    "email": "info@knowledgenest.com",
+    "website": "www.knowledgenest.com",
+    "images": [
+      "/library/main.jpg",
+      "/library/gallery-1.jpg",
+      "/library/gallery-2.jpg",
+      "/library/gallery-3.jpg",
+      "/library/gallery-4.jpg"
+    ],
+    "seatingOptions": [
+      {
+        "id": "private-cabin-9",
+        "name": "Private Cabin",
+        "description": "Simple private cabin at an affordable rate.",
+        "availability": "3 seats available",
+        "price": "₹600/day",
+        "image": "/seating/cabin.jpg"
+      },
+      {
+        "id": "semi-private-9",
+        "name": "Semi-Private",
+        "description": "Budget-friendly semi-private desks with partitions.",
+        "availability": "8 seats available",
+        "price": "₹450/day",
+        "image": "/seating/cubicle.jpg"
+      },
+      {
+        "id": "shared-desk-9",
+        "name": "Shared Desk",
+        "description": "Basic shared desks in a quiet space.",
+        "availability": "20 seats available",
+        "price": "₹300/day",
+        "image": "/seating/open-desk.jpg"
+      }
+    ],
+    "amenities": [
+      { "icon": "Wifi", "name": "High-Speed Wi-Fi" },
+      { "icon": "Zap", "name": "AC & Power Socket" },
+      { "icon": "Shield", "name": "Locker & Security" },
+      { "icon": "Users", "name": "Restroom" },
+      { "icon": "Globe", "name": "Library Resources" }
+    ],
+    "rules": [
+      "Maintain silence in common areas",
+      "Outside food allowed only in designated area",
+      "Respect other members’ space",
+      "Shared desks cannot be reserved"
+    ]
+  },
+  "10": {
+    "id": 10,
+    "name": "Enlighten Library",
+    "location": "West Park, Learnville",
+    "fullAddress": "303 Bright Street, West Park, Learnville - 560010",
+    "rating": 4.7,
+    "reviews": 195,
+    "description": "Enlighten Library is built to inspire learning. With bright interiors and peaceful vibes, it is ideal for both students and working professionals.",
+    "hours": "6 AM - 12 Midnight",
+    "tags": ["Inspiring", "Bright", "Peaceful"],
+    "phone": "9876500010",
+    "email": "support@enlightenlibrary.com",
+    "website": "www.enlightenlibrary.com",
+    "images": [
+      "/library/main.jpg",
+      "/library/gallery-1.jpg",
+      "/library/gallery-2.jpg",
+      "/library/gallery-3.jpg",
+      "/library/gallery-4.jpg"
+    ],
+    "seatingOptions": [
+      {
+        "id": "private-cabin-10",
+        "name": "Private Cabin",
+        "description": "Bright private cabins with natural lighting.",
+        "availability": "5 seats available",
+        "price": "₹850/day",
+        "image": "/seating/cabin.jpg"
+      },
+      {
+        "id": "semi-private-10",
+        "name": "Semi-Private",
+        "description": "Semi-private sections with inspiring wall quotes.",
+        "availability": "10 seats available",
+        "price": "₹600/day",
+        "image": "/seating/cubicle.jpg"
+      },
+      {
+        "id": "shared-desk-10",
+        "name": "Shared Desk",
+        "description": "Shared desks in a bright, well-lit hall.",
+        "availability": "25 seats available",
+        "price": "₹400/day",
+        "image": "/seating/open-desk.jpg"
+      }
+    ],
+    "amenities": [
+      { "icon": "Wifi", "name": "High-Speed Wi-Fi" },
+      { "icon": "Zap", "name": "AC & Power Socket" },
+      { "icon": "Shield", "name": "Locker & Security" },
+      { "icon": "Users", "name": "Restroom" },
+      { "icon": "Globe", "name": "Library Resources" }
+    ],
+    "rules": [
+      "Keep the environment inspiring and quiet",
+      "Food is not allowed inside the study halls",
+      "Respect the use of shared quotes and boards",
+      "Cabin bookings must be confirmed 24 hours in advance"
+    ]
+  },
+  "11": {
+    "id": 11,
+    "name": "Focus First Library",
+    "location": "East End, Learnville",
+    "fullAddress": "452 Scholar's Road, East End, Learnville - 560011",
+    "rating": 4.4,
+    "reviews": 130,
+    "description": "Focus First Library is a dedicated study space designed for competitive exam aspirants, offering focused seating and distraction-free zones.",
+    "hours": "7 AM - 11 PM",
+    "tags": ["Study Space", "Affordable", "Silent Zone"],
+    "phone": "9876543211",
+    "email": "focusfirst@library.com",
+    "website": "www.focusfirstlibrary.com",
+    "images": [
+      "/library/main.jpg",
+      "/library/gallery-1.jpg",
+      "/library/gallery-2.jpg",
+      "/library/gallery-3.jpg",
+      "/library/gallery-4.jpg"
+    ],
+    "seatingOptions": [
+      {
+        "id": "private-cabin-11",
+        "name": "Private Cabin",
+        "description": "Quiet cabin for individual focused preparation.",
+        "availability": "4 seats available",
+        "price": "₹750/day",
+        "image": "/seating/cabin.jpg"
+      },
+      {
+        "id": "semi-private-11",
+        "name": "Semi-Private",
+        "description": "Comfortable cubicles with minimal noise disturbance.",
+        "availability": "10 seats available",
+        "price": "₹550/day",
+        "image": "/seating/cubicle.jpg"
+      },
+      {
+        "id": "shared-desk-11",
+        "name": "Shared Desk",
+        "description": "Affordable shared desks in a silent study hall.",
+        "availability": "20 seats available",
+        "price": "₹350/day",
+        "image": "/seating/open-desk.jpg"
+      }
+    ],
+    "amenities": [
+      { "icon": "Wifi", "name": "High-Speed Wi-Fi" },
+      { "icon": "Zap", "name": "Power Backup" },
+      { "icon": "Users", "name": "Restroom" },
+      { "icon": "Shield", "name": "CCTV Security" }
+    ],
+    "rules": [
+      "Maintain silence at all times",
+      "Food only allowed in cafeteria area",
+      "Do not move chairs or desks",
+      "Switch off lights and fans when leaving"
+    ]
+  },
+  "12": {
+    "id": 12,
+    "name": "Infinity Study Hub",
+    "location": "North Gate, Learnville",
+    "fullAddress": "88 Knowledge Avenue, North Gate, Learnville - 560012",
+    "rating": 4.7,
+    "reviews": 170,
+    "description": "Infinity Study Hub is designed for long-hour learners with ergonomic seating and all modern facilities.",
+    "hours": "24/7 Access",
+    "tags": ["24/7 Access", "Premium"],
+    "phone": "9876543212",
+    "email": "infinity@studyhub.com",
+    "website": "www.infinitystudyhub.com",
+    "images": [
+      "/library/main.jpg",
+      "/library/gallery-1.jpg",
+      "/library/gallery-2.jpg",
+      "/library/gallery-3.jpg",
+      "/library/gallery-4.jpg"
+    ],
+    "seatingOptions": [
+      {
+        "id": "private-cabin-12",
+        "name": "Private Cabin",
+        "description": "Premium private cabin with personal desk and lamp.",
+        "availability": "6 seats available",
+        "price": "₹900/day",
+        "image": "/seating/cabin.jpg"
+      },
+      {
+        "id": "semi-private-12",
+        "name": "Semi-Private",
+        "description": "Comfortable semi-partitioned seats with charging ports.",
+        "availability": "12 seats available",
+        "price": "₹650/day",
+        "image": "/seating/cubicle.jpg"
+      },
+      {
+        "id": "shared-desk-12",
+        "name": "Shared Desk",
+        "description": "Large shared tables for group learners.",
+        "availability": "25 seats available",
+        "price": "₹450/day",
+        "image": "/seating/open-desk.jpg"
+      }
+    ],
+    "amenities": [
+      { "icon": "Wifi", "name": "Unlimited Wi-Fi" },
+      { "icon": "Zap", "name": "AC & Power Backup" },
+      { "icon": "Users", "name": "Washrooms" },
+      { "icon": "Coffee", "name": "Cafeteria" }
+    ],
+    "rules": [
+      "Silence is compulsory inside study halls",
+      "Use headphones for media content",
+      "Do not leave belongings unattended",
+      "Consumption of alcohol is prohibited"
+    ]
+  },
+  "13": {
+    "id": 13,
+    "name": "Elite Knowledge Center",
+    "location": "City Center, Learnville",
+    "fullAddress": "201 Elite Square, City Center, Learnville - 560013",
+    "rating": 4.9,
+    "reviews": 300,
+    "description": "Elite Knowledge Center offers high-end study environments with access to premium digital and physical resources.",
+    "hours": "8 AM - 12 AM",
+    "tags": ["Premium", "Digital Access"],
+    "phone": "9876543213",
+    "email": "elite@knowledgecenter.com",
+    "website": "www.eliteknowledgecenter.com",
+    "images": [
+      "/library/main.jpg",
+      "/library/gallery-1.jpg",
+      "/library/gallery-2.jpg",
+      "/library/gallery-3.jpg",
+      "/library/gallery-4.jpg"
+    ],
+    "seatingOptions": [
+      {
+        "id": "private-cabin-13",
+        "name": "Private Cabin",
+        "description": "Luxury cabins with personal storage and lamp.",
+        "availability": "5 seats available",
+        "price": "₹1200/day",
+        "image": "/seating/cabin.jpg"
+      },
+      {
+        "id": "semi-private-13",
+        "name": "Semi-Private",
+        "description": "Well-ventilated cubicles for focused study.",
+        "availability": "10 seats available",
+        "price": "₹800/day",
+        "image": "/seating/cubicle.jpg"
+      },
+      {
+        "id": "shared-desk-13",
+        "name": "Shared Desk",
+        "description": "Spacious open desk area for collaborative learning.",
+        "availability": "18 seats available",
+        "price": "₹500/day",
+        "image": "/seating/open-desk.jpg"
+      }
+    ],
+    "amenities": [
+      { "icon": "Wifi", "name": "Ultra-Fast Wi-Fi" },
+      { "icon": "Zap", "name": "Air Conditioning" },
+      { "icon": "Printer", "name": "Printer Access" },
+      { "icon": "Globe", "name": "Digital Resources" }
+    ],
+    "rules": [
+      "Strict silence policy in all study rooms",
+      "Maintain cleanliness and hygiene",
+      "Outside food not allowed",
+      "Proper dress code required"
+    ]
+  },
+  "14": {
+    "id": 14,
+    "name": "Student's Corner Library",
+    "location": "South End, Learnville",
+    "fullAddress": "78 Learning Park, South End, Learnville - 560014",
+    "rating": 4.2,
+    "reviews": 90,
+    "description": "Student's Corner Library provides affordable study options for students with long operating hours and essential facilities.",
+    "hours": "6 AM - 10 PM",
+    "tags": ["Affordable", "Student-Friendly"],
+    "phone": "9876543214",
+    "email": "studentscorner@library.com",
+    "website": "www.studentscornerlibrary.com",
+    "images": [
+      "/library/main.jpg",
+      "/library/gallery-1.jpg",
+      "/library/gallery-2.jpg",
+      "/library/gallery-3.jpg",
+      "/library/gallery-4.jpg"
+    ],
+    "seatingOptions": [
+      {
+        "id": "private-cabin-14",
+        "name": "Private Cabin",
+        "description": "Simple and affordable cabins for individual learning.",
+        "availability": "3 seats available",
+        "price": "₹600/day",
+        "image": "/seating/cabin.jpg"
+      },
+      {
+        "id": "semi-private-14",
+        "name": "Semi-Private",
+        "description": "Cubicle seating with basic amenities.",
+        "availability": "12 seats available",
+        "price": "₹450/day",
+        "image": "/seating/cubicle.jpg"
+      },
+      {
+        "id": "shared-desk-14",
+        "name": "Shared Desk",
+        "description": "Budget-friendly shared tables for students.",
+        "availability": "22 seats available",
+        "price": "₹300/day",
+        "image": "/seating/open-desk.jpg"
+      }
+    ],
+    "amenities": [
+      { "icon": "Wifi", "name": "Wi-Fi" },
+      { "icon": "Users", "name": "Restrooms" },
+      { "icon": "Zap", "name": "Power Backup" }
+    ],
+    "rules": [
+      "Maintain silence in study areas",
+      "Food only allowed in cafeteria",
+      "Respect other learners",
+      "No loud discussions inside study halls"
+    ]
+  },
+  "15": {
+    "id": 15,
+    "name": "Brainwave Library",
+    "location": "Tech Park, Learnville",
+    "fullAddress": "15 Innovation Drive, Tech Park, Learnville - 560015",
+    "rating": 4.6,
+    "reviews": 160,
+    "description": "Brainwave Library is tailored for professionals and students, combining co-working features with a study environment.",
+    "hours": "24/7 Access",
+    "tags": ["Co-Working", "24/7 Access"],
+    "phone": "9876543215",
+    "email": "brainwave@library.com",
+    "website": "www.brainwavelibrary.com",
+    "images": [
+      "/library/main.jpg",
+      "/library/gallery-1.jpg",
+      "/library/gallery-2.jpg",
+      "/library/gallery-3.jpg",
+      "/library/gallery-4.jpg"
+    ],
+    "seatingOptions": [
+      {
+        "id": "private-cabin-15",
+        "name": "Private Cabin",
+        "description": "Exclusive cabins suitable for professionals and students.",
+        "availability": "6 seats available",
+        "price": "₹1000/day",
+        "image": "/seating/cabin.jpg"
+      },
+      {
+        "id": "semi-private-15",
+        "name": "Semi-Private",
+        "description": "Comfortable semi-private seating with high-speed internet.",
+        "availability": "15 seats available",
+        "price": "₹700/day",
+        "image": "/seating/cubicle.jpg"
+      },
+      {
+        "id": "shared-desk-15",
+        "name": "Shared Desk",
+        "description": "Open desk area with collaborative environment.",
+        "availability": "30 seats available",
+        "price": "₹500/day",
+        "image": "/seating/open-desk.jpg"
+      }
+    ],
+    "amenities": [
+      { "icon": "Wifi", "name": "High-Speed Internet" },
+      { "icon": "Zap", "name": "Power Backup" },
+      { "icon": "Coffee", "name": "Coffee Machine" },
+      { "icon": "Users", "name": "Restrooms" }
+    ],
+    "rules": [
+      "Be respectful to co-learners",
+      "Conference calls only in designated rooms",
+      "Keep the library clean",
+      "Maintain professional conduct"
+    ]
+  }
+}

@@ -8,198 +8,98 @@ const LibraryDetails = () => {
   const [activeTab, setActiveTab] = useState('seating');
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [library, setLibrary] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   
   // Get the library ID from the URL parameters
   const { id } = useParams();
 
-  // Library data (in a real app, this would come from an API or context)
-  const librariesData = {
-    1: {
-      id: 1,
-      name: "Scholar's Den Uptown",
-      location: "Uptown Area, Learnville",
-      fullAddress: "123 Scholar's Street, Uptown Area, Learnville - 560001",
-      rating: 4.8,
-      reviews: 250,
-      description: "Scholar's Den Uptown is a 24/7 study library designed for serious learners. We provide a peaceful and focused environment with modern amenities to help you achieve your academic goals.",
-      hours: "24/7 Access",
-      tags: ["24/7 Access", "Study Space", "Premium"],
-      phone: "9876543210",
-      email: "contact@scholarsden.com",
-      website: "www.scholarsden.com",
-      images: [
-        '/library/main.jpg',
-        '/library/gallery-1.jpg',
-        '/library/gallery-2.jpg',
-        '/library/gallery-3.jpg',
-        '/library/gallery-4.jpg',
-      ],
-      seatingOptions: [
-        {
-          id: 'private-cabin',
-          name: 'Private Cabin',
-          description: 'Fully enclosed private cabin with premium desk space and storage.',
-          availability: '3 seats available',
-          price: '₹800/day',
-          image: '/seating/cabin.jpg'
-        },
-        {
-          id: 'semi-private',
-          name: 'Semi-Private',
-          description: 'Semi-private workspace with partition walls.',
-          availability: '8 seats available',
-          price: '₹600/day',
-          image: '/seating/cubicle.jpg'
-        },
-        {
-          id: 'shared-desk',
-          name: 'Shared Desk',
-          description: 'Shared workspace in quiet study hall.',
-          availability: '15 seats available',
-          price: '₹400/day',
-          image: '/seating/open-desk.jpg'
-        }
-      ],
-      amenities: [
-        { icon: <Wifi className="amenity-icon" />, name: 'High-Speed Wi-Fi' },
-        { icon: <Zap className="amenity-icon" />, name: 'AC & Power Socket' },
-        { icon: <Shield className="amenity-icon" />, name: 'Locker & Security' },
-        { icon: <Users className="amenity-icon" />, name: 'Restroom' },
-        { icon: <Globe className="amenity-icon" />, name: 'Library Resources' }
-      ],
-      rules: [
-        'Maintain complete silence in study areas',
-        'No outside food in premium cabins',
-        'Clean and sanitize your workspace after use',
-        'No phone calls in silent zones'
-      ]
-    },
-    2: {
-      id: 2,
-      name: "FocusHub Central",
-      location: "Central District, Tech City",
-      fullAddress: "123 Knowledge Park, Silicon Alley, Central District, Tech City - 560001",
-      rating: 4.5,
-      reviews: 120,
-      description: "FocusHub Central offers a premium study environment with various seating options and top-notch amenities to boost your productivity. Located in the heart of Tech City.",
-      hours: "08:00 AM - 10:00 PM",
-      tags: ["Study Space", "Coworking", "Modern"],
-      phone: "9876543210",
-      email: "contact@focushub.com",
-      website: "www.focushub.com",
-      images: [
-        '/library/main.jpg',
-        '/library/gallery-1.jpg',
-        '/library/gallery-2.jpg',
-        '/library/gallery-3.jpg',
-        '/library/gallery-4.jpg',
-      ],
-      seatingOptions: [
-        {
-          id: 'cabin',
-          name: 'Cabin',
-          description: 'Private, enclosed cabin with ample desk space.',
-          availability: '5 seats available',
-          price: '₹700/day',
-          image: '/seating/cabin.jpg'
-        },
-        {
-          id: 'cubicle',
-          name: 'Cubicle',
-          description: 'Semi-private cubicle for focused work.',
-          availability: '10 seats available',
-          price: '₹500/day',
-          image: '/seating/cubicle.jpg'
-        },
-        {
-          id: 'open-desk',
-          name: 'Open Desk',
-          description: 'Shared open desk in a quiet environment.',
-          availability: '20 seats available',
-          price: '₹300/day',
-          image: '/seating/open-desk.jpg'
-        }
-      ],
-      amenities: [
-        { icon: <Wifi className="amenity-icon" />, name: 'Wi-Fi' },
-        { icon: <Zap className="amenity-icon" />, name: 'AC' },
-        { icon: <Zap className="amenity-icon" />, name: 'Power Socket' },
-        { icon: <Users className="amenity-icon" />, name: 'Restroom' },
-        { icon: <Shield className="amenity-icon" />, name: 'CCTV Security' }
-      ],
-      rules: [
-        'Maintain silence',
-        'No outside food allowed in cabins',
-        'Clean your desk after use'
-      ]
-    },
-    3: {
-      id: 3,
-      name: "The Study Nook",
-      location: "Green Meadows, Quiet Town",
-      fullAddress: "456 Study Lane, Green Meadows, Quiet Town - 560002",
-      rating: 4.2,
-      reviews: 80,
-      description: "The Study Nook offers a casual and comfortable environment for short study bursts or remote work sessions. Perfect for students looking for an affordable study space.",
-      hours: "09:00 AM - 09:00 PM",
-      tags: ["Affordable", "Casual", "Flexible"],
-      phone: "9876543211",
-      email: "hello@studynook.com",
-      website: "www.studynook.com",
-      images: [
-        '/library/main.jpg',
-        '/library/gallery-1.jpg',
-        '/library/gallery-2.jpg',
-        '/library/gallery-3.jpg',
-        '/library/gallery-4.jpg',
-      ],
-      seatingOptions: [
-        {
-          id: 'cozy-corner',
-          name: 'Cozy Corner',
-          description: 'Comfortable corner seat with good lighting.',
-          availability: '12 seats available',
-          price: '₹150/day',
-          image: '/seating/cabin.jpg'
-        },
-        {
-          id: 'study-table',
-          name: 'Study Table',
-          description: 'Standard study table in open area.',
-          availability: '25 seats available',
-          price: '₹100/day',
-          image: '/seating/cubicle.jpg'
-        }
-      ],
-      amenities: [
-        { icon: <Wifi className="amenity-icon" />, name: 'Wi-Fi' },
-        { icon: <Shield className="amenity-icon" />, name: 'Locker' },
-        { icon: <Globe className="amenity-icon" />, name: 'Reading Lamp' },
-        { icon: <Zap className="amenity-icon" />, name: 'Power Socket' }
-      ],
-      rules: [
-        'Keep noise to minimum',
-        'Return books to designated areas',
-        'No food or drinks near electronics'
-      ]
-    }
-  };
-
-  // Sample reviews (in a real app, these would be fetched based on library ID)
+  // Sample reviews (in a real app, these would also be fetched from API/JSON)
   const reviews = [
     { id: 1, name: 'Aisha K.', initials: 'AK', rating: 5, comment: 'Excellent place for focused study! Clean and quiet.', date: '10/15/2023' },
     { id: 2, name: 'Rohan S.', initials: 'RS', rating: 4, comment: 'Good amenities, but Wi-Fi was a bit slow.', date: '10/12/2023' }
   ];
 
+  // Function to fetch library data from JSON file
+  const fetchLibraryData = async (libraryId) => {
+    try {
+      setLoading(true);
+      setError(null);
+      
+      // Fetch data from the JSON file
+      const response = await fetch('/data/libraries.json');
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      const librariesData = await response.json();
+      const libraryData = librariesData[libraryId];
+      
+      if (!libraryData) {
+        throw new Error('Library not found');
+      }
+      
+      setLibrary(libraryData);
+    } catch (err) {
+      console.error('Error fetching library data:', err);
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   // Load library data based on ID
   useEffect(() => {
-    const libraryData = librariesData[parseInt(id)];
-    if (libraryData) {
-      setLibrary(libraryData);
+    if (id) {
+      fetchLibraryData(id);
     }
   }, [id]);
 
-  // If library not found, show error
+  // Helper function to render amenity icons
+  const renderAmenityIcon = (iconName) => {
+    const iconMap = {
+      Wifi: <Wifi className="amenity-icon" />,
+      Zap: <Zap className="amenity-icon" />,
+      Shield: <Shield className="amenity-icon" />,
+      Users: <Users className="amenity-icon" />,
+      Globe: <Globe className="amenity-icon" />
+    };
+    
+    return iconMap[iconName] || <Globe className="amenity-icon" />;
+  };
+
+  // Loading state
+  if (loading) {
+    return (
+      <div className="app-container">
+        <main className="main-content">
+          <div className="loading-message">
+            <h2>Loading library details...</h2>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  // Error state
+  if (error) {
+    return (
+      <div className="app-container">
+        <main className="main-content">
+          <div className="error-message">
+            <h1>Error Loading Library</h1>
+            <p>{error}</p>
+            <button onClick={() => fetchLibraryData(id)} className="retry-button">
+              Try Again
+            </button>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  // If library not found
   if (!library) {
     return (
       <div className="app-container">
@@ -344,7 +244,9 @@ const LibraryDetails = () => {
                 <div className="amenities-grid">
                   {library.amenities.map((amenity, index) => (
                     <div key={index} className="amenity-item">
-                      <div className="amenity-icon-container">{amenity.icon}</div>
+                      <div className="amenity-icon-container">
+                        {renderAmenityIcon(amenity.icon)}
+                      </div>
                       <span className="amenity-name">{amenity.name}</span>
                     </div>
                   ))}

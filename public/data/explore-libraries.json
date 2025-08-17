@@ -1,0 +1,252 @@
+{
+  "libraries": [
+    {
+      "id": 1,
+      "name": "Scholar's Den Uptown",
+      "location": "Uptown Area, Learnville",
+      "rating": 4.8,
+      "reviews": 250,
+      "description": "Scholar's Den Uptown is a 24/7 study library designed for serious learners. We provide a peaceful and focused environment with modern amenities.",
+      "price": 6000,
+      "priceType": "monthly",
+      "tags": ["24/7 Access"],
+      "amenities": ["Wi-Fi", "AC", "Locker", "Power Socket", "Restroom"],
+      "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80"
+    },
+    {
+      "id": 2,
+      "name": "The Knowledge Hub Central",
+      "location": "Central Avenue, EduCity",
+      "rating": 4.7,
+      "reviews": 320,
+      "description": "A modern library with digital resources, group study rooms, and peaceful reading halls perfect for students and professionals.",
+      "price": 5500,
+      "priceType": "monthly",
+      "tags": ["Digital Library"],
+      "amenities": ["Wi-Fi", "AC", "Restroom", "Printer"],
+      "image": "https://images.unsplash.com/photo-1535905748047-14b2415c87d1?w=800&q=80"
+    },
+    {
+      "id": 3,
+      "name": "FocusPoint Riverside Library",
+      "location": "Riverside Lane, EduTown",
+      "rating": 4.6,
+      "reviews": 180,
+      "description": "A calm riverside library offering uninterrupted study sessions with cabins and group halls.",
+      "price": 5000,
+      "priceType": "monthly",
+      "tags": ["Peaceful", "River View"],
+      "amenities": ["Wi-Fi", "AC", "Locker", "Restroom"],
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=80"
+    },
+    {
+      "id": 4,
+      "name": "MindSpace Library Downtown",
+      "location": "Downtown, Metro City",
+      "rating": 4.5,
+      "reviews": 210,
+      "description": "MindSpace Downtown is designed for busy city students with flexible timings and affordable pricing.",
+      "price": 4500,
+      "priceType": "monthly",
+      "tags": ["Flexible Hours"],
+      "amenities": ["Wi-Fi", "AC", "Power Socket", "Restroom", "Food & Beverages"],
+      "image": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&q=80"
+    },
+    {
+      "id": 5,
+      "name": "QuietNest Study Hub",
+      "location": "Green Park, Learnville",
+      "rating": 4.9,
+      "reviews": 310,
+      "description": "QuietNest provides ultra-silent study cabins surrounded by greenery for maximum focus.",
+      "price": 7000,
+      "priceType": "monthly",
+      "tags": ["Silent Zone"],
+      "amenities": ["Wi-Fi", "AC", "Locker", "Restroom"],
+      "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80"
+    },
+    {
+      "id": 6,
+      "name": "The Study Lounge",
+      "location": "Hilltop Road, EduHeights",
+      "rating": 4.4,
+      "reviews": 150,
+      "description": "The Study Lounge is a cozy library with reading lamps, Wi-Fi, and affordable desk spaces.",
+      "price": 4000,
+      "priceType": "monthly",
+      "tags": ["Cozy"],
+      "amenities": ["Wi-Fi", "Reading Lamp", "Restroom"],
+      "image": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80"
+    },
+    {
+      "id": 7,
+      "name": "BrightMinds Central Library",
+      "location": "Innovation Street, TechPark",
+      "rating": 4.7,
+      "reviews": 280,
+      "description": "BrightMinds Central Library is popular among IT professionals and students for its digital access and modern setup.",
+      "price": 6500,
+      "priceType": "monthly",
+      "tags": ["Tech-Friendly"],
+      "amenities": ["Wi-Fi", "AC", "Printer", "Power Socket", "Parking"],
+      "image": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&q=80"
+    },
+    {
+      "id": 8,
+      "name": "Elite Scholars Library",
+      "location": "Elite Colony, Knowledge City",
+      "rating": 4.9,
+      "reviews": 400,
+      "description": "Elite Scholars offers premium facilities with high-end cabins, unlimited Wi-Fi, and secure lockers.",
+      "price": 9000,
+      "priceType": "monthly",
+      "tags": ["Premium"],
+      "amenities": ["Wi-Fi", "AC", "Locker", "Power Socket", "Restroom", "Parking"],
+      "image": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&q=80"
+    },
+    {
+      "id": 9,
+      "name": "CityLight Study Hub",
+      "location": "Main Market, Metro City",
+      "rating": 4.3,
+      "reviews": 120,
+      "description": "CityLight Study Hub is budget-friendly and designed for students who prefer late-night study hours.",
+      "price": 3500,
+      "priceType": "monthly",
+      "tags": ["Budget-Friendly"],
+      "amenities": ["Wi-Fi", "AC", "Restroom"],
+      "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&q=80"
+    },
+    {
+      "id": 10,
+      "name": "Infinity Learning Library",
+      "location": "Infinity Towers, Knowledge Park",
+      "rating": 4.8,
+      "reviews": 290,
+      "description": "Infinity Learning Library provides 24/7 access with state-of-the-art infrastructure for dedicated learners.",
+      "price": 8000,
+      "priceType": "monthly",
+      "tags": ["24/7 Access", "Premium"],
+      "amenities": ["Wi-Fi", "AC", "Locker", "Power Socket", "Printer", "Restroom"],
+      "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80"
+    },
+    {
+    "id": 11,
+    "name": "Silent Hours Library",
+    "location": "Lakeview Road, EduHeights",
+    "rating": 4.6,
+    "reviews": 175,
+    "description": "Silent Hours Library is known for its calm, noise-free environment and dedicated individual cabins for students.",
+    "price": 4800,
+    "priceType": "monthly",
+    "tags": ["Silent Zone"],
+    "amenities": ["Wi-Fi", "AC", "Locker", "Restroom"],
+    "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80"
+  },
+  {
+    "id": 12,
+    "name": "NextGen Learning Hub",
+    "location": "Tech Valley, Knowledge City",
+    "rating": 4.8,
+    "reviews": 260,
+    "description": "NextGen Learning Hub combines modern digital resources with traditional reading spaces, attracting both students and working professionals.",
+    "price": 7200,
+    "priceType": "monthly",
+    "tags": ["Tech-Friendly", "Digital Library"],
+    "amenities": ["Wi-Fi", "AC", "Power Socket", "Printer", "Restroom"],
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80"
+  },
+  {
+    "id": 13,
+    "name": "FocusHive Premium Study",
+    "location": "Royal Square, Metro City",
+    "rating": 4.9,
+    "reviews": 390,
+    "description": "FocusHive Premium Study offers a luxurious environment with spacious study cabins, lounge areas, and complimentary beverages.",
+    "price": 9500,
+    "priceType": "monthly",
+    "tags": ["Premium", "24/7 Access"],
+    "amenities": ["Wi-Fi", "AC", "Locker", "Power Socket", "Restroom", "Food & Beverages", "Parking"],
+    "image": "https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=800&q=80"
+  },
+  {
+    "id": 14,
+    "name": "Metro Scholars Library",
+    "location": "Business Bay, Metro City",
+    "rating": 4.4,
+    "reviews": 140,
+    "description": "Metro Scholars Library provides flexible desk spaces with affordable plans, making it ideal for competitive exam preparation.",
+    "price": 4200,
+    "priceType": "monthly",
+    "tags": ["Flexible Hours", "Budget-Friendly"],
+    "amenities": ["Wi-Fi", "AC", "Power Socket", "Restroom"],
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80"
+  },
+  {
+    "id": 15,
+    "name": "EduHaven Central",
+    "location": "Heritage Street, EduTown",
+    "rating": 4.7,
+    "reviews": 310,
+    "description": "EduHaven Central blends heritage-style interiors with modern study facilities, offering a unique learning atmosphere.",
+    "price": 6800,
+    "priceType": "monthly",
+    "tags": ["Heritage", "Modern"],
+    "amenities": ["Wi-Fi", "AC", "Locker", "Restroom", "Printer"],
+    "image": "https://images.unsplash.com/photo-1496317899792-9d7dbcd928a1?w=800&q=80"
+  }
+
+  ],
+  "amenitiesList": [
+    {
+      "id": "wifi",
+      "label": "Wi-Fi",
+      "icon": "Wifi"
+    },
+    {
+      "id": "ac",
+      "label": "AC",
+      "icon": "Zap"
+    },
+    {
+      "id": "locker",
+      "label": "Locker",
+      "icon": "Lock"
+    },
+    {
+      "id": "power",
+      "label": "Power Socket",
+      "icon": "Zap"
+    },
+    {
+      "id": "food",
+      "label": "Food & Beverages",
+      "icon": "Coffee"
+    },
+    {
+      "id": "parking",
+      "label": "Parking",
+      "icon": "Car"
+    },
+    {
+      "id": "printer",
+      "label": "Printer",
+      "icon": "Printer"
+    },
+    {
+      "id": "restroom",
+      "label": "Restroom",
+      "icon": "Users"
+    },
+    {
+      "id": "reading",
+      "label": "Reading Lamp",
+      "icon": "BookOpen"
+    }
+  ],
+  "sortOptions": [
+    "Sort by Rating",
+    "Price: Low to High",
+    "Price: High to Low"
+  ]
+}

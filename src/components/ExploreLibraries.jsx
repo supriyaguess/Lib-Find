@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Search, MapPin, Grid, List, ChevronDown, Filter, Star, Wifi, Zap, Lock, Coffee, Car, Printer, Users, BookOpen, X } from 'lucide-react';
 import './ExploreLibraries.css';
 import { useNavigate } from "react-router-dom";
@@ -11,80 +11,87 @@ const ExploreLibraries = () => {
   const [showFilters, setShowFilters] = useState(false);
   const [feeRange, setFeeRange] = useState([0, 10000]);
   const [selectedAmenities, setSelectedAmenities] = useState([]);
+  
+  // New state for data management
+  const [libraries, setLibraries] = useState([]);
+  const [amenitiesList, setAmenitiesList] = useState([]);
+  const [sortOptions, setSortOptions] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const navigate = useNavigate();
 
-  // Updated handleClick to accept library ID
-  const handleClick = (libraryId) => {
-    navigate(`/libraries/${libraryId}`); // Navigate to specific library page
+  // Function to fetch data from JSON file
+  const fetchLibrariesData = async () => {
+    try {
+      setLoading(true);
+      setError(null);
+      
+      const response = await fetch('/data/explore-libraries.json');
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      
+      setLibraries(data.libraries || []);
+      setAmenitiesList(data.amenitiesList || []);
+      setSortOptions(data.sortOptions || []);
+      
+      // Set default sort option if available
+      if (data.sortOptions && data.sortOptions.length > 0) {
+        setSortBy(data.sortOptions[0]);
+      }
+      
+    } catch (err) {
+      console.error('Error fetching libraries data:', err);
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
-  const libraries = [
-    {
-      id: 1,
-      name: "Scholar's Den Uptown",
-      location: "Uptown Area, Learnville",
-      rating: 4.8,
-      reviews: 250,
-      description:
-        "Scholar's Den Uptown is a 24/7 study library designed for serious learners. We provide a peaceful and focused environment with modern amenities.",
-      price: 6000,
-      priceType: "monthly",
-      tags: ["24/7 Access"],
-      amenities: ["Wi-Fi", "AC", "Locker", "Power Socket", "Restroom"],
-      image:
-        "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80"
-    },
-    {
-      id: 2,
-      name: "FocusHub Central",
-      location: "Central District, Tech City",
-      rating: 4.5,
-      reviews: 120,
-      description:
-        "FocusHub Central offers a premium study environment with various seating options and modern facilities for productive learning.",
-      price: 5000,
-      priceType: "monthly",
-      tags: ["Quiet Zone"],
-      amenities: ["Wi-Fi", "AC", "Locker", "Power Socket", "Food & Beverages"],
-      image:
-        "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&q=80"
-    },
-    {
-      id: 3,
-      name: "The Study Nook",
-      location: "Green Meadows, Quiet Town",
-      rating: 4.2,
-      reviews: 80,
-      description:
-        "The Study Nook offers a casual and comfortable environment for short study bursts or remote work sessions.",
-      price: 100,
-      priceType: "hourly",
-      tags: ["Affordable"],
-      amenities: ["Wi-Fi", "Locker", "Reading Lamp", "Power Socket"],
-      image:
-        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80"
+  // Load data on component mount
+  useEffect(() => {
+    fetchLibrariesData();
+  }, []);
+
+  // Function to sort libraries based on selected option
+  const getSortedLibraries = () => {
+    const sortedLibraries = [...libraries];
+    
+    switch (sortBy) {
+      case 'Price: Low to High':
+        return sortedLibraries.sort((a, b) => a.price - b.price);
+      case 'Price: High to Low':
+        return sortedLibraries.sort((a, b) => b.price - a.price);
+      case 'Sort by Rating':
+      default:
+        return sortedLibraries.sort((a, b) => b.rating - a.rating);
     }
-  ];
+  };
 
+  // Helper function to render amenity icons
+  const renderAmenityIcon = (iconName) => {
+    const iconMap = {
+      Wifi: <Wifi className="amenity-icon" />,
+      Zap: <Zap className="amenity-icon" />,
+      Lock: <Lock className="amenity-icon" />,
+      Coffee: <Coffee className="amenity-icon" />,
+      Car: <Car className="amenity-icon" />,
+      Printer: <Printer className="amenity-icon" />,
+      Users: <Users className="amenity-icon" />,
+      BookOpen: <BookOpen className="amenity-icon" />
+    };
+    
+    return iconMap[iconName] || <Wifi className="amenity-icon" />;
+  };
 
-  const sortOptions = [
-    "Sort by Rating",
-    "Price: Low to High", 
-    "Price: High to Low"
-  ];
-
-  const amenitiesList = [
-    { id: 'wifi', label: 'Wi-Fi', icon: Wifi },
-    { id: 'ac', label: 'AC', icon: Zap },
-    { id: 'locker', label: 'Locker', icon: Lock },
-    { id: 'power', label: 'Power Socket', icon: Zap },
-    { id: 'food', label: 'Food & Beverages', icon: Coffee },
-    { id: 'parking', label: 'Parking', icon: Car },
-    { id: 'printer', label: 'Printer', icon: Printer },
-    { id: 'restroom', label: 'Restroom', icon: Users },
-    { id: 'reading', label: 'Reading Lamp', icon: BookOpen },
-  ];
+  // Updated handleClick to accept library ID
+  const handleClick = (libraryId) => {
+    navigate(`/libraries/${libraryId}`);
+  };
 
   const handleAmenityToggle = (amenityId) => {
     setSelectedAmenities(prev => 
@@ -238,6 +245,37 @@ const ExploreLibraries = () => {
     </div>
   );
 
+  // Loading state
+  if (loading) {
+    return (
+      <div className="app-container">
+        <main className="main-content">
+          <div className="loading-message">
+            <h2>Loading libraries...</h2>
+            <p>Please wait while we fetch the latest library information.</p>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  // Error state
+  if (error) {
+    return (
+      <div className="app-container">
+        <main className="main-content">
+          <div className="error-message">
+            <h1>Error Loading Libraries</h1>
+            <p>{error}</p>
+            <button onClick={fetchLibrariesData} className="retry-button">
+              Try Again
+            </button>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
   return (
     <div className="app-container">
       {/* Header */}
@@ -247,7 +285,7 @@ const ExploreLibraries = () => {
       <main className="main-content">
         <div className="page-header">
           <h1 className="page-title">Explore Study Libraries</h1>
-          <p className="page-subtitle">{libraries.length} libraries found.</p>
+          <p className="page-subtitle">{getSortedLibraries().length} libraries found.</p>
         </div>
 
         {/* Controls */}
@@ -301,10 +339,16 @@ const ExploreLibraries = () => {
 
         {/* Libraries Display */}
         <div className={viewMode === 'grid' ? 'libraries-grid' : 'libraries-list'}>
-          {libraries.map(library => 
-            viewMode === 'grid' ? 
-              <LibraryCard key={library.id} library={library} /> : 
-              <LibraryListItem key={library.id} library={library} />
+          {getSortedLibraries().length > 0 ? (
+            getSortedLibraries().map(library => 
+              viewMode === 'grid' ? 
+                <LibraryCard key={library.id} library={library} /> : 
+                <LibraryListItem key={library.id} library={library} />
+            )
+          ) : (
+            <div className="no-libraries">
+              <p>No libraries found.</p>
+            </div>
           )}
         </div>
       </main>
@@ -352,7 +396,10 @@ const ExploreLibraries = () => {
                         onChange={() => handleAmenityToggle(amenity.id)}
                         className="checkbox-input"
                       />
-                      <span className="checkbox-text">{amenity.label}</span>
+                      <div className="amenity-with-icon">
+                        {renderAmenityIcon(amenity.icon)}
+                        <span className="checkbox-text">{amenity.label}</span>
+                      </div>
                     </label>
                   ))}
                 </div>
